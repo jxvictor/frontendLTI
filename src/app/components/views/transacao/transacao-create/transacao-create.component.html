@@ -1,0 +1,22 @@
+<form>
+    <h1>CRIANDO NOVA TRANSACAO</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Conta id</mat-label>
+        <input matInput [(ngModel)]="transacao.conta" type="number" name="conta">
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>Transacao id</mat-label>
+        <input matInput [(ngModel)]="transacao.id" type="number" name="transacao id">
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>Valor transacao</mat-label>
+        <input matInput [(ngModel)]="transacao.valor" type="number" name="valor">
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="create()" class="mat-elevation-z8" mat-raised-button color="primary"> CRIAR </button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-raised-button color="warn"> CANCELAR </button>
+    </div>
+
+</form>

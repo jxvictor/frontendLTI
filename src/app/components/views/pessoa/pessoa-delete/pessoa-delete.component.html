@@ -1,0 +1,22 @@
+<form>
+    <h1>DELETANDO PESSOA</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Nome</mat-label>
+        <input matInput [(ngModel)]="pessoa.nome" type="text" name="nome" disabled>
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>Cpf</mat-label>
+        <input matInput [(ngModel)]="pessoa.cpf" type="text" name="cpf" disabled>
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>Data Nascimento</mat-label>
+        <input matInput [(ngModel)]="pessoa.dataNascimento" type="date" name="dataNascimento" disabled>
+    </mat-form-field>
+
+    <div class="buttons">
+        <button class="mat-elevation-z8" mat-raised-button color="primary"> DELETAR </button>
+        <button class="mat-elevation-z8" mat-raised-button color="warn"> CANCELAR </button>
+    </div>
+
+</form>
